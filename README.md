@@ -3,7 +3,7 @@
 ## Product Features
 
 * CEX-like Experience: Compatible with AA Wallet (email/password login), multi-chain asset aggregation
-* Industry-leading features: Unified account, hybrid margin
+* Industry-leading features: Unified account, portfolio margin
 
 ## Overall Design of State Tree
 

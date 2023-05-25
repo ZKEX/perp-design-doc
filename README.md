@@ -17,9 +17,10 @@
 |Withdraw|Layer2 instruction, user-initiated withdrawal|
 |Transfer|Layer2 instruction, user-initiated internal transfer within Layer2|
 |ChangePubKey|Layer2 instruction, user initializes Layer2 Private Key|
+
 ## Business Operation
-Business instructions include basic trading instructions for spot and derivatives, as well as instructions specifically designed for derivatives such as forced liquidation, ADL, and funding fees.
-To achieve decentralization, a Layer1 priority instruction, ForceLiquidation, is designed to ensure the fairness of forced liquidations.
+* Business instructions include basic trading instructions for spot and derivatives, as well as instructions specifically designed for derivatives such as forced liquidation, ADL, and funding fees.
+* To achieve decentralization, a Layer1 priority instruction, ForceLiquidation, is designed to ensure the fairness of forced liquidations.
 
 ### Account Slot
 To enable concurrent order placement, zkLink has designed the Account Slot feature.
@@ -38,12 +39,12 @@ In addition to nonce and remaining amount, the order's sig hash is also recorded
 
 ### SpotTrade
 * The circuit stores: Token balances
-* The circuit verifies: Bidirectional user signatures, order quantity matching (buy and sell quantities are equal), reasonable price (execution price is better than the order price)
+* The circuit verifies: user signatures, order quantity matching (buy and sell quantities are equal), reasonable price (execution price is better than the order price)
 
 
 ### PerpTrade
 * The circuit stores: Opening average price, position, direction
-* The circuit verifies: Bidirectional user signatures, order quantity matching (long and short positions are equal), reasonable price (execution price is better than the order price)
+* The circuit verifies: user signatures, order quantity matching (long and short positions are equal), reasonable price (execution price is better than the order price)
 
 ![trading](./trading.png)
 
